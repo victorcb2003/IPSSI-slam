@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acheter LEGO</title>
+    <link rel="stylesheet" href="acheter.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <header>
+
+            <h1>LEGO Webstore</h1>
+            <hr>
+            <ul>
+                <li><a href="main.html">Accueil</a></li>
+                <li><a href="#">Acheter</a></li>
+            </ul>
+
+        </header>
+
+        <hr>
+
+        <main>
+            <h2>Acheter des LEGO</h2>
+            <p>Remplissez le formulaire ci-dessous pour commander des <span>LEGO !</span></p>
+            <h3>Informations personnelles</h3>
+
+            <form>
+                <label for="gender">Civilité : </label><br>
+                <input type="radio" name="gender" value="male"><label>Mr</label>
+                <input type="radio" name="gender" value="female"><label>Mme</label>
+                <br><br>
+                <label for="lastname">Nom : </label><br>
+                <input name="lastname" type="text" placeholder="Votre nom ...">
+                <br><br>
+                <label for="firstname">Prénom : </label><br>
+                <input name="firstname" type="text" placeholder="Votre prénom ...">
+                <br><br>
+                <label for="email">Email</label><br>
+                <input name="email" type="email" placeholder="Votre email ...">
+
+                <h3>Informations de livraison</h3>
+
+                <label for="quantity">Quantité commandée : </label>
+                <br><br>
+                <select name="quantity" id="quantity">
+                    <option value="one">1 boite</option>
+                    <option value="two">2 boites</option>  
+                    <option value="three">3 boites</option>
+                    <option value="four">4 boites</option>
+                    <option value="five">5 boites</option>
+                </select>
+                <br><br>
+                <label for="adress">Adresse de livraison : </label><br>
+                <textarea name="adress" cols="30" rows="10"></textarea>
+
+                <h3>Confirmation</h3>
+                <input name="validation" type="checkbox">
+                <label for="validation">J'ai relu ma commande et certifie que ces informations sont correctes.</label>
+                <br><br>
+                <input type="submit" value="Confirmer la commande">
+            </form>
+        </main>
+        <hr>
+        <footer>
+            <a href="#top">Retour en haut de page</a>
+            <p>TP1 : Découverte de HTML et CSS</p>
+            <p>L2 Développement Web - 2018</p>
+        </footer>    
+    </div>
+
+</body>
+</html>
